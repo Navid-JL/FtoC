@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Calculator</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="card">
+            <form id="card-form">
+                <div id="form-options">
+                    <h2 class="form-heading">Temperature Calculator</h2>
+                    <label class="form-label" for="measureA">From</label>
+                    <select name="measureA" id="measureA" class="options">
+                        <option value="celsius" class="option-values">Celsius</option>
+                        <option value="fahrenheit" class="option-values">Fahrenheit</option>
+                    </select>
+                    <label class="form-label" for="measureB">To</label>
+                    <select name="measureB" id="measureB" class="options">
+                        <option value="fahrenheit" class="option-values">Fahrenheit</option>
+                        <option value="celsius" class="option-values">Celsius</option>
+                    </select>
+                    <input type="text" name="txtInput" id="txtInput">
+                </div>
+                <div id="result">
+                    <p id="result-show"></p>
+                </div>
+                <input type="submit" id="processBtn" class="btn btn-dark" value="Process">
+            </form>
+        </div>
+        <p class="error">Bad input!</p>
+    </div>
+
+    <!-- jQuery -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
